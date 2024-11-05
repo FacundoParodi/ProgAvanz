@@ -1,0 +1,133 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(250, 250, 250, 0.9);
+  background-color: #1e1e1e;
+
+  font-synthesis: none;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+a {
+  font-weight: 600;
+  color: #57a8ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #426ecb;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  min-height: 100vh;
+  
+  background-image: url('/spacex-bg.jpg'); 
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.logo {
+  height: 5.5em;
+  padding: 1.2em;
+  transition: filter 200ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em #57a8ffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 1.5em #f0db4fbb);
+}
+
+.card {
+  padding: 1.8em;
+}
+
+.read-the-docs {
+  color: #777;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: 500;
+  background-color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+button:hover {
+  border-color: #57a8ff;
+}
+button:focus,
+button:focus-visible {
+  outline: 3px auto -webkit-focus-ring-color;
+}
+
+.launches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.launch-card {
+  background-color: #f8f8f8;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.launch-card img {
+  width: 90px;
+  height: 90px; 
+  object-fit: contain; 
+  margin-bottom: 8px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      color: #222;
+      background-color: #f7f7f7;
+  }
+  a:hover {
+      color: #5773ff;
+  }
+  button {
+      background-color: #efefef;
+  }
+}
+
+.launch-details {
+  text-align: left;
+  margin-top: 18px;
+}
+
+.launch-details img {
+  width: 280px; 
+  height: auto;
+  margin: 15px 0;
+}
